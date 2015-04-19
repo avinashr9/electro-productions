@@ -2,6 +2,10 @@ body {
 	padding-top:70px;
 }
 
+h2 {
+	height:50px;
+}
+
 .features .glyphicon {
 	font-size:5em;
 	color: grey;
@@ -9,10 +13,6 @@ body {
 
 .hide_service {
 	display: none;
-}
-
-.display_service {
-	display: block;
 }
 
 .cursor_style {
