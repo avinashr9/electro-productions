@@ -1,8 +1,20 @@
-body{
+body {
 	padding-top:70px;
 }
 
-.features .glyphicon{
+.features .glyphicon {
 	font-size:5em;
 	color: grey;
+}
+
+.hide_service {
+	display: none;
+}
+
+.display_service {
+	display: block;
+}
+
+.cursor_style {
+	cursor: pointer;
 }
