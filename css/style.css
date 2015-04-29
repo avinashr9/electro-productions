@@ -1,14 +1,25 @@
 body {
-	padding-top:70px;
+	padding-top:40px;
 }
 
 h2 {
 	height:50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size:25px;
+	clear:both;
+}
+
+h3 {
+	font-size:19px;
 }
 
 .features .glyphicon {
 	font-size:5em;
 	color: grey;
+}
+
+.features {
+	height: 220px;
 }
 
 .hide_service {
@@ -17,4 +28,44 @@ h2 {
 
 .cursor_style {
 	cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  i {
+	  font-size:3em;
+	  color: grey;
+  }
+
+  h3 {
+	  font-size:15px;
+	  font-weight:600;
+  }
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 13px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top{
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-brand {
+        font-size: 1.5em;
+    }
+	
+	body {
+		padding-top:70px;
+	}
 }
