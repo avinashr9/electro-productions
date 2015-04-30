@@ -12,7 +12,12 @@ h2 {
 h3 {
 	font-size:19px;
 }
-
+p {
+ text-align: justify;
+}
+li{
+ list-style: none;
+}
 .features .glyphicon {
 	font-size:5em;
 	color: grey;
@@ -135,4 +140,29 @@ color: #fff;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
 }
+/* pic*/
 
+.pic{
+  width: 75%;
+  height: 75%;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 26%;
+  margin-bottom: 10%;
+ 
+
+}
+/* contact from label style*/
+.contactLabels{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+ 
+}
+/* footer style */
+.footerStyle{
+  background-color:#101010;
+  opacity:0.8;
+  color: #FFFFFF;
+}
+.footerStyle p{
+  text-align:center;
+}
