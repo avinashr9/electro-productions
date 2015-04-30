@@ -9,18 +9,50 @@
     <!-- Bootstrap css file-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-    
+
+    <!-- Including FancyBox CSS file-->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+
     <!-- External CSS file -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+
     <!-- jQuery (Required for bootstrap javascript plugin) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    
+
     <!-- Bootstrap javascript plugins -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
+
+    <!-- Fancybox Javascript files-->
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
     <!-- External JavaScript file-->
     <script src="js/script.js"></script>
+
+    <!-- Script to load fancybox -->
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+		});
+	</script>
 
     <!--[if lt IE 9]>
       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -45,73 +77,89 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container">
+    <div id="portfolio" class="container">
       <!-- Portfolio -->
       <h2>Our Previous Work!</h2>
 	  <div class="container">
 	   <div id="wrapper" >
 	     <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/a.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/122709634">
+               <img src="_img/a.jpg"/>
+             </a>
+	       <div class="titleBox">Leverage Global Partners</div>
          </div>
          </div>
 		 
 		 <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/b.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/32875604">
+               <img src="_img/b.jpg"/>
+             </a>
+	       <div class="titleBox">Vitamin Gaint</div>
          </div>
          </div>
 		 
 		 <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/c.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/32881586">
+               <img src="_img/c.jpg" /> 
+             </a>
+	       <div class="titleBox">Bull Dog</div>
          </div>
          </div>
 		 
 		 <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/d.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/60720086">
+               <img src="_img/d.jpg" /> 
+             </a>
+	       <div class="titleBox">Vestar Hot Rolling Mill</div>
          </div>
          </div>
 		 
 		 <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/e.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/58598273">
+               <img src="_img/e.jpg" /> 
+             </a>
+	       <div class="titleBox">Super Bowl 2012</div>
          </div>
          </div>
 		 
 		 <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/f.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/58578407">
+               <img src="_img/f.jpg" /> 
+             </a>
+	       <div class="titleBox">Apacks</div>
          </div>
          </div>
 		 
 		 <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/g.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/57239949">
+               <img src="_img/g.jpg" /> 
+             </a>
+	       <div class="titleBox">SMC</div>
          </div>
          </div>
 		 
 		 <div id ="imagetile">
            <div id="imageinside">
-             <img src="_img/h.jpg" /> 
-	       <div class="titleBox">The image title text</div>
+             <a class="fancybox-media" href="https://vimeo.com/42194275">
+               <img src="_img/h.jpg" /> 
+             </a>
+	       <div class="titleBox">Up from Here</div>
          </div>
          </div>
 		 
@@ -120,8 +168,8 @@
       </div>
 	</div> 
 
-      <!-- Services -->
-	   <div class="container">
+     <!-- Services -->
+	 <div id="service" class="container">
       <h2>What We Do?</h2>
       <div class="row text-center features">
         
@@ -184,8 +232,9 @@
         <!--</div>-->
       </div>
     </div>
-      <!-- About -->
-	<div class="container">
+
+    <!-- About -->
+	<div id="about" class="container">
       <h2>Who are we?</h2>
 	</div>  
 	<div class="container">
@@ -236,7 +285,7 @@
 	  </div>
     
       <!-- Contact Us -->
-	 <div class="container">
+	 <div id="contact" class="container">
       <h2>Get in Touch!</h2>
 	 </div>
 	 <div class="container">
