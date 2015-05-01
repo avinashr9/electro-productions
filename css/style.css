@@ -165,4 +165,38 @@ color: #fff;
 }
 .footerStyle p{
   text-align:center;
+  margin-top:1%;
 }
+
+/* Background video styling*/
+.logoOnVideo{
+  position: absolute;
+ z-index:1;
+ top: 25%;
+    left:40%;
+}
+
+.videoContainer{
+ 
+position: relative;
+z-index: 0;
+}
+
+video {
+  width: 100%    !important;
+    opacity:0.3;
+}
+.videoFooter{
+position: absolute;
+ z-index:1;
+ bottom:0;
+    left:0;
+ width: 100%;
+ height: 18%;
+ background-color: #FFFFFF;
+}
+.videoFooter p{
+   margin-top:1%;
+   text-align: center;
+}
+
