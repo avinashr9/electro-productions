@@ -27,6 +27,7 @@
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
 
     <!-- External JavaScript file-->
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
     <script src="js/script.js"></script>
     <!--[if lt IE 9]>
       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -37,6 +38,7 @@
 
   <body>
     <!-- Fixed Navigation Bar at the top of the page-->
+	
     <nav id="header" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -49,8 +51,8 @@
           </button>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
+          <ul class="nav navbar-nav navbar-right" id="nav">
+            <li class="current"><a href="#home">Home</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#about">About</a></li>
@@ -61,21 +63,30 @@
     </nav>
    
    <!-- Baclground video -->
-	<div class="videoContainer">
-                <video id="video1" autoplay loop muted " > 
+    <div class="section-wrapper-home" id="home" >
+    <div class="section">
+	
+	<div class="videoContainer" >
+                <video id="video1" autoplay loop muted  > 
                 <source src="video/demo.mp4" type="video/mp4" />
                </video>
     <div class="logoOnVideo">
      <img src="_img/logo.png" width=100% height=100% />
+	 
    </div>
     <div class="videoFooter">
-	     <p>Electro Productions INC.
-	 </p>
+	<div class="demoButton">  <a class="fancybox-media" href="https://vimeo.com/57239949"> <button type="button" class="btn btn-primary">View our Demo Reel </button> </a></div>
+	      <p>Electro Productions INC. </p>
 	</div>
 	</div>
+	</div>
+	</div>
+	
 
-   
-    <div id="portfolio" class="container">
+	
+	<div class="section-wrapper" id="portfolio">
+    <div class="section">
+    <div  class="container">
       <!-- Portfolio -->
       <h2>Our Previous Work!</h2>
 	  <div class="container">
@@ -156,9 +167,12 @@
 	   </div>
       </div>
 	</div> 
-
+    </div>
+    </div>
      <!-- Services -->
-	 <div id="service" class="container">
+    <div class="section-wrapper" id="service">
+    <div class="section">	 
+	<div  class="container">
       <h2>What We Do?</h2>
       <div class="row text-center features">
         
@@ -221,9 +235,12 @@
         <!--</div>-->
       </div>
     </div>
-
+    </div>
+    </div>
     <!-- About -->
-	<div id="about" class="container">
+	<div class="section-wrapper" id="about" >
+    <div class="section">
+	<div  class="container">
       <h2>Who are we?</h2>
 	</div>  
 	<div class="container">
@@ -244,7 +261,7 @@
 		 
 	  </div>
 	</div>
-	 <div class="container">
+	<div class="container">
 	    
 		
 	    <div class="row">
@@ -271,10 +288,14 @@
          </div>
 		</div> 
 		
-	  </div>
-    
+	</div>
+    </div>
+    </div> 
       <!-- Contact Us -->
-	 <div id="contact" class="container">
+    <div class="section-wrapper" id="contact">
+    <div class="section">	  
+	  
+	 <div  class="container">
       <h2>Get in Touch!</h2>
 	 </div>
 	 <div class="container">
@@ -337,7 +358,8 @@
 	    </div>
        </div>
 	 </div>  
-	
+    </div>
+    </div>	
 	<div class="panel-footer footerStyle">
  
         <p>Copyright &copy;Electro Productions Inc.</p>

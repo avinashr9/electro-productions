@@ -193,10 +193,39 @@ position: absolute;
     left:0;
  width: 100%;
  height: 18%;
- background-color: #FFFFFF;
+background-color:#FFFFFF;
+/* background-color:#95AD4C;*/
 }
 .videoFooter p{
    margin-top:1%;
    text-align: center;
 }
+.demoButton{
+  margin-top:1%;
+  text-align:center;
+  
+}
+.demoButton button{
+background-color:#FFF2E7;
+  border-color:#FFF2E7;
+  color:#021229;
+}
+#portfolioPage{
+  
+}
+.section-wrapper {
+			margin-top: -50px;
+			padding-top: 60px;
+		}
+.section-wrapper:first-child .section {
+			padding-top: 100px;
+}
+/* home wrapper */
 
+.section-wrapper-home {
+			margin-top: -50px;
+			padding-top: 45px;
+		}
+.section-wrapper-home:first-child .section {
+			padding-top: 70px;
+}
