@@ -11,13 +11,21 @@ h2 {
 
 h3 {
 	font-size:19px;
+	text-align:center;
 }
+
+h4 {
+	text-align: center-left;
+}
+
 p {
- text-align: justify;
+	text-align: justify;
 }
+
 li{
- list-style: none;
+	list-style: none;
 }
+
 .features .glyphicon {
 	font-size:5em;
 	color: grey;
@@ -69,7 +77,7 @@ li{
     .navbar-fixed-top.navbar-brand {
         font-size: 1.5em;
     }
-	
+
 	body {
 		padding-top:70px;
 	}
@@ -77,155 +85,152 @@ li{
 
 /* Grid Styling */
 #wrapper{
-  overflow: hidden;
-  width: 90%;
-  
-  margin-left: auto;
-  margin-right: auto;
-  
-  /*background: #0FF; */
- }
-#imagetile{
- 
-  
-  width: 20%;
-  padding-bottom: 20%;
-  margin: 1%;
-  /*background: #00F; */
-   color: #FFF;
-   float: left;
-   position: relative;
+	overflow: hidden;
+	width: 90%;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#imageinside{
- 
- left: 0px;
- right: 0px;
- top: 0px;
- bottom: 0px;
- position: absolute;
- overflow: hidden;
-  
-  
+.imagetile{
+	width: 20%;
+    padding-bottom: 20%;
+    margin: 1%;
+    color: #FFF;
+    float: left;
+    position: relative;
 }
 
-#imageinside img {
-
-width: 100%;
-height: 100%;
-position: absolute;
- 
-}
-
-#imageinside .titleBox {
-background-color: #39BDE9;
+.imageinside{
+	left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
     position: absolute;
-color: #fff;
-
-	opacity:0.9;
-    
-	
-  height : 30%;
-  bottom : -30%;
-  width: 100%;
-  text-align :center;
-  display: block;
-  line-height: 25pt;
-
+    overflow: hidden;
 }
-#wrapper #imagetile #imageinside:hover .titleBox{
 
-    -moz-transform: translateY(-100%);
+.imageinside img {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.imageinside .titleBox {
+	background-color: #39BDE9;
+    position: absolute;
+    color: #fff;
+	opacity:0.9;
+
+    height : 30%;
+    bottom : -30%;
+    width: 100%;
+    text-align :center;
+    display: block;
+    line-height: 25pt;
+}
+
+#wrapper .imagetile .imageinside:hover .titleBox{
+	-moz-transform: translateY(-100%);
     -o-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
 }
+
 /* pic*/
-
 .pic{
-  width: 75%;
-  height: 75%;
-  margin-left: auto;
-  margin-right:auto;
-  margin-top: 26%;
-  margin-bottom: 10%;
- 
-
+	width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 26%;
+    margin-bottom: 10%;
 }
+
 /* contact from label style*/
 .contactLabels{
-  font-family: "Comic Sans MS", cursive, sans-serif;
- 
+	font-family: "Comic Sans MS", cursive, sans-serif; 
 }
+
 /* footer style */
 .footerStyle{
-  background-color:#101010;
-  opacity:0.8;
-  color: #FFFFFF;
+	background-color:#101010;
+    opacity:0.8;
+    color: #FFFFFF;
 }
+
 .footerStyle p{
-  text-align:center;
-  margin-top:1%;
+	text-align:center;
+    margin-top:1%;
 }
 
 /* Background video styling*/
 .logoOnVideo{
-  position: absolute;
- z-index:1;
- top: 25%;
+	position: absolute;
+    z-index:1;
+    top: 25%;
     left:40%;
 }
 
+.vidLogo {
+	width: 100%;
+	height: 100%;
+}
+
 .videoContainer{
- 
-position: relative;
-z-index: 0;
+	position: relative;
+    z-index: 0;
 }
 
 video {
-  width: 100%    !important;
+	width: 100%    !important;
     opacity:0.3;
 }
-.videoFooter{
-position: absolute;
- z-index:1;
- bottom:0;
-    left:0;
- width: 100%;
- height: 18%;
-background-color:#FFFFFF;
-/* background-color:#95AD4C;*/
-}
-.videoFooter p{
-   margin-top:1%;
-   text-align: center;
-}
-.demoButton{
-  margin-top:1%;
-  text-align:center;
-  
-}
-.demoButton button{
-background-color:#FFF2E7;
-  border-color:#FFF2E7;
-  color:#021229;
-}
-#portfolioPage{
-  
-}
-.section-wrapper {
-			margin-top: -50px;
-			padding-top: 60px;
-		}
-.section-wrapper:first-child .section {
-			padding-top: 100px;
-}
-/* home wrapper */
 
+.videoFooter{
+	position: absolute;
+    z-index:1;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 18%;
+    background-color:#FFFFFF;
+}
+
+.videoFooter p{
+	margin-top:1%;
+    text-align: center;
+}
+
+.demoButton{
+	margin-top:1%;
+    text-align:center;
+}
+
+.demoButton button{
+	background-color:#FFF2E7;
+    border-color:#FFF2E7;
+    color:#021229;
+}
+
+#portfolioPage{
+}
+
+.section-wrapper {
+	margin-top: -50px;
+	padding-top: 60px;
+}
+
+.section-wrapper:first-child .section {
+	padding-top: 100px;
+}
+
+/* home wrapper */
 .section-wrapper-home {
-			margin-top: -50px;
-			padding-top: 45px;
-		}
+	margin-top: -50px;
+	padding-top: 45px;
+}
+
 .section-wrapper-home:first-child .section {
-			padding-top: 70px;
+	padding-top: 70px;
 }
