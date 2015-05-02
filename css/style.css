@@ -16,7 +16,7 @@ h3 {
 }
 
 h4 {
-	text-align: center-left;
+	text-align: center;
 }
 
 p {
@@ -75,12 +75,15 @@ li{
 @media(max-width: 768px) {
   i {
 	  font-size:3em;
-	  color: grey;
   }
 
   h3 {
 	  font-size:15px;
 	  font-weight:600;
+  }
+
+  h2 {
+	  font-size: 20px;
   }
 }
 
@@ -200,10 +203,15 @@ li{
 	position: absolute;
     z-index:1;
     top: 25%;
-    left:43%;
+    left:27%;
 }
 
 .vidLogo {
+	width: 80%;
+	height: 80%;
+}
+
+.abtLogo {
 	width: 65%;
 	height: 65%;
 }
@@ -252,7 +260,7 @@ video {
 	background-color: #D4D4D4;
 }
 
-#service1 {
+#service11 {
 	background-color: #635B59;
 	color: #fff;
 }
