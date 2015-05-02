@@ -43,6 +43,34 @@ li{
 	cursor: pointer;
 }
 
+/*Setting background color to header*/
+#header {
+	background-color: #333333;
+}
+
+/*Setting color to the navbar brand*/
+.navbar-fixed-top .navbar-brand {
+	color: #ffffff;
+}
+
+.navbar-fixed-top .navbar-brand:hover {
+	color: #ffffff;
+}
+
+/*Setting color to the navbar menu items*/
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #F89100;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+	color: #F89100;
+}
+
+/*Changing the size of glyphicons for small size screens*/
 @media(max-width: 768px) {
   i {
 	  font-size:3em;
@@ -64,7 +92,7 @@ li{
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
+        font-size: 2.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -74,8 +102,8 @@ li{
         padding: 10px 0;
     }
 
-    .navbar-fixed-top.navbar-brand {
-        font-size: 1.5em;
+    .navbar-default .navbar-nav>li>a {
+		font-size: 20px;
     }
 
 	body {
