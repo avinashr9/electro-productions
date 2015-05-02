@@ -5,7 +5,8 @@ body {
 h2 {
 	height:50px;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size:25px;
+	font-size:28px;
+	text-align:center;
 	clear:both;
 }
 
@@ -28,7 +29,7 @@ li{
 
 .features .glyphicon {
 	font-size:5em;
-	color: grey;
+	color: #F89100;
 }
 
 .features {
@@ -124,7 +125,7 @@ li{
 	width: 20%;
     padding-bottom: 20%;
     margin: 1%;
-    color: #FFF;
+    color: #fff;
     float: left;
     position: relative;
 }
@@ -145,10 +146,12 @@ li{
 }
 
 .imageinside .titleBox {
-	background-color: #39BDE9;
+	padding-top:15px;
+	background-color: #F89100;
     position: absolute;
     color: #fff;
-	opacity:0.9;
+	font-size: 18px;
+	opacity:0.75;
 
     height : 30%;
     bottom : -30%;
@@ -197,12 +200,12 @@ li{
 	position: absolute;
     z-index:1;
     top: 25%;
-    left:40%;
+    left:43%;
 }
 
 .vidLogo {
-	width: 100%;
-	height: 100%;
+	width: 65%;
+	height: 65%;
 }
 
 .videoContainer{
@@ -235,13 +238,23 @@ video {
     text-align:center;
 }
 
-.demoButton button{
-	background-color:#FFF2E7;
-    border-color:#FFF2E7;
-    color:#021229;
+.demoButton a{
+	background-color:#F89112;
+    border-color:#F89112;
+    color:#ffffff;
+	font-size: 18px;
 }
 
 #portfolioPage{
+}
+
+#service, #portfolio1, #contact1 {
+	background-color: #D4D4D4;
+}
+
+#service1 {
+	background-color: #635B59;
+	color: #fff;
 }
 
 .section-wrapper {
