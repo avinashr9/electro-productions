@@ -283,3 +283,63 @@ video {
 .section-wrapper-home:first-child .section {
 	padding-top: 70px;
 }
+
+/*Social icons */
+.social-icon {
+    list-style: none outside none;
+    margin-top: 1%;
+	margin-bottom:1%;
+    padding: 0;
+    text-align: center;
+	float:right;
+}
+.social-icon ul{
+  margin-top:2 %;
+  
+}
+.social-icon > li {
+    display: inline-block;
+    margin: 3px;
+	
+}
+.social-icon a {
+    border: 3px solid #FFFFFF;
+    border-radius: 100px;
+    display: block;
+    height: 40px;
+    line-height: 34px;
+    text-align: center;
+    width: 40px;
+	color:#FFFFFF;
+}
+#footer p {
+    font-size: 13px;
+	text-align:center;
+	margin-top:1%;
+	margin-bottom:1%;
+	float:left;
+}
+footer{
+
+  background-color:#101010;
+    opacity:0.8;
+    color: #FFFFFF;
+}
+.social-icon a:hover{
+  opacity: 0.1;
+}
+
+/* contact details */
+.glyphicon-phone{
+  
+  font-size:1.5em;
+  color:#F89100;
+}
+.glyphicon-home{
+  font-size: 1.5em;
+  color:#F89100;
+}
+
+.contactDetails{
+ text-align:left;
+}
