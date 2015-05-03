@@ -25,6 +25,6 @@ Phone: {$_REQUEST['phone']}\r\n
 Message: {$_REQUEST['message']}\r\n
 EOD;
 
-mail('raaviavinash8072@gmail.com', "Enquiry Message from {$_REQUEST['email']}", $mailMessage01, $header);
+mail("raaviavinash8072@gmail.com", "Enquiry Message from {$_REQUEST['email']}", $mailMessage01, $header);
 mail($_REQUEST['email'], "Your Application has been Sent", $mailMessage02, $header)
 ?>

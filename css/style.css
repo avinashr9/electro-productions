@@ -47,6 +47,7 @@ li{
 /*Setting background color to header*/
 #header {
 	background-color: #333333;
+	border-color: #333333;
 }
 
 /*Setting color to the navbar brand*/
