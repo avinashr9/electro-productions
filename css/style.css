@@ -295,7 +295,7 @@ video {
 	float:right;
 }
 .social-icon ul{
-  margin-top:2 %;
+  margin-top:2%;
   
 }
 .social-icon > li {
@@ -356,4 +356,8 @@ footer{
 
 #submitBtn:hover{
 	background-color:#286090;
+}
+
+.contactPad {
+	padding-left: 55px;
 }
