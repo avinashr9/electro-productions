@@ -296,32 +296,32 @@
 	      <div class="row">
 	        <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-2">
               <!-- form -->
-		      <form class="form-horizontal" id="contactform" role="form">
+		      <form class="form-horizontal" id="contactform" role="form" method="post" action="send_email.php">
 		        <div class="form-group">
 			      <label  for="name" class= "control-label col-sm-2 contactLabels">Name</label>
 				  <div class="col-sm-10">
-				    <input  type="text" class= "form-control" id="name" placeholder= "Name"  required data-validation-required-message="Please enter your name" >
+				    <input  type="text" class= "form-control" id="name" name="name" placeholder= "Name"  required data-validation-required-message="Please enter your name" >
 			      </div>
 			    </div>
 
 			    <div class="form-group">
 			      <label for="email" class="control-label col-sm-2  contactLabels">Email </label>
 				  <div class="col-sm-10">
-				    <input type="email" id="email" class="form-control" placeholder ="Email Address" required data-validation-required-message="Please enter your email address" >
+				    <input type="email" id="email" name="email" class="form-control" placeholder ="Email Address" required data-validation-required-message="Please enter your email address" >
 			      </div> 
 			    </div>
 
 			    <div class="form-group">
 			      <label for= "phone" class="control-label col-sm-2 contactLabels">Phone </label>
 				  <div class="col-sm-10">
-				    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your contact number" >
+				    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" name="phone" required data-validation-required-message="Please enter your contact number" >
 			      </div>
 			     </div>
 
 			     <div class="form-group">
 			       <label for="message" class="control-label col-sm-2 contactLabels">Message </label>
 			       <div class="col-sm-10">
-			         <textarea id="message" placeholder="Write your message here" class="form-control" required data-validation-required-message="Please enter your Message name" ></textarea> 
+			         <textarea id="message" name="message" placeholder="Write your message here" class="form-control" required data-validation-required-message="Please enter your Message name" ></textarea> 
 			       </div>
 			     </div>
 
