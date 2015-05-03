@@ -48,4 +48,61 @@ $(document).ready(function(){
       }
     });
 
+    /*$( "#submitBtn" ).click(function() {
+		 $('#submitModal').modal('show');
+     });*/
+
+    /*Name field validation*/
+	$('#name').blur(function() {
+		var name = $(this).val();
+		var charReg = new RegExp('^([a-zA-Z ]{3,25})$');
+		if(!charReg.test(name)) {
+			$('#name_validate').removeClass('hide_service');
+			$("#submitBtn").prop("disabled",true);
+		}
+		else {
+			$('#name_validate').addClass('hide_service');
+			if($('#name_validate').hasClass('hide_service') &&
+			     $('#email_validate').hasClass('hide_service') &&
+				   $('#phne_validate').hasClass('hide_service')) {
+			$("#submitBtn").prop("disabled",false);
+			}
+		}
+	});
+
+    /*Email field validation*/
+	$('#email').blur(function() {
+		var email1 = $(this).val();
+		var charReg = new RegExp('^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$');
+		if(!charReg.test(email1) || email1.length == 0) {
+			$('#email_validate').removeClass('hide_service');
+			$("#submitBtn").prop("disabled",true);
+		}
+		else {
+			$('#email_validate').addClass('hide_service');
+			if($('#name_validate').hasClass('hide_service') &&
+			     $('#email_validate').hasClass('hide_service') &&
+				   $('#phne_validate').hasClass('hide_service')) {
+			$("#submitBtn").prop("disabled",false);
+			}
+		}
+	});
+
+    /*Phone field validation*/
+	$('#phone').blur(function() {
+		var phone = $(this).val();
+		var charReg = new RegExp('[0-9-()+]{3,20}');
+		if(!charReg.test(phone) || phone.length == 0) {
+			$('#phne_validate').removeClass('hide_service');
+			$("#submitBtn").prop("disabled",true);
+		}
+		else {
+			$('#phne_validate').addClass('hide_service');
+			if($('#name_validate').hasClass('hide_service') &&
+			     $('#email_validate').hasClass('hide_service') &&
+				   $('#phne_validate').hasClass('hide_service')) {
+			$("#submitBtn").prop("disabled",false);
+			}
+		}
+	});
 }); 

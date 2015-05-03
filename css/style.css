@@ -343,3 +343,16 @@ footer{
 .contactDetails{
  text-align:left;
 }
+
+.validate {
+	color: #F89100;
+	padding-left:80px;
+}
+
+#submitBtn {
+	color: white;
+}
+
+#submitBtn:hover{
+	background-color:#286090;
+}
