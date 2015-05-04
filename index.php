@@ -451,10 +451,10 @@
 	<footer id="footer" >
         	<div class="container align-center">
             	<ul class="social-icon">
-            		<li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+            		<li><a target="_blank" href="https://www.linkedin.com/in/electroproductions" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/juszkiewicz" class="facebook"><i class="fa fa-facebook"></i></a></li>
                     <li><a target="_blank" href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="" class="vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+                    <li><a target="_blank" href="https://vimeo.com/electroproductions" class="vimeo"><i class="fa fa-vimeo-square"></i></a></li>
                 </ul>
                 <div class="spacing40"></div>
             	<p>Copyright © Electro productions Inc.</p>
