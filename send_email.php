@@ -1,8 +1,8 @@
 <?php
 header('Location: http://ella.ils.indiana.edu/~avinravi/electro'); 
-$header = "Reply-to: Avin <avinravi@umail.iu.edu>\r\n";
-$header .= "Return-Path: Avin <avinravi@umail.iu.edu>\r\n";
-$header .= "From: Avin <avinravi@umail.iu.edu>\r\n";
+$header = "Reply-to: Electro Productions. <ryan@electroproductions.com>\r\n";
+$header .= "Return-Path: Electro Productions. <ryan@electroproductions.com>\r\n";
+$header .= "From: Electro Productions <ryan@electroproductions.com>\r\n";
 $header .= "Organization: Electro Productions\r\n";
 $header .= "Content-Type: text/plain\r\n";
 
@@ -25,6 +25,6 @@ Phone: {$_REQUEST['phone']}\r\n
 Message: {$_REQUEST['message']}\r\n
 EOD;
 
-mail("raaviavinash8072@gmail.com", "Enquiry Message from {$_REQUEST['email']}", $mailMessage01, $header);
+mail("ryan@electroproductions.com", "Enquiry Message from {$_REQUEST['email']}", $mailMessage01, $header);
 mail($_REQUEST['email'], "Your Application has been Sent", $mailMessage02, $header)
 ?>
