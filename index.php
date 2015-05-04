@@ -17,6 +17,7 @@
 
     <!-- External CSS file -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <!-- jQuery (Required for bootstrap javascript plugin) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -80,11 +81,46 @@
 	        <div class="demoButton">
               <a class="fancybox-media btn btn-primary" href="https://vimeo.com/57239949"> View our Demo Reel </a>
             </div>
-	        <!--<p>Electro Productions INC. </p>-->
 	      </div>
 	    </div>
 	  </div>
 	</div>
+
+    <!--contact email status modal -->
+	   <!-- modal -->
+	   <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body Message">
+            <p id="Message"> </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- modal -->
+
+	 <?php if( isset($_GET["status"] ) AND $_GET["status"]=="true"){ ?>
+         <script> 
+             $('#myModalLabel').text("We'll get back to you shortly");	 
+		    $('#Message').text("Thank you for contacting us! Please check your mailbox for the confirmation email");
+		  $('#submitModal').modal('show');
+		 </script>
+	 <?php }else if( isset($_GET["status"] ) AND $_GET["status"]=="false") { ?>
+	   <script>
+	    $('#myModalLabel').text("Sorry Send Failed :(");
+	    $('#Message').text("There is some problem in seding e-mail from here.Please try to reach sravya.gudipudi@gmail.com");
+	    $('#submitModal').modal('show');
+	   
+	   </script>
+	 <?php } ?>
+	<!-- end of email status -->
 
     <!-- Portfolio -->
 	<div class="section-wrapper" id="portfolio">
@@ -282,6 +318,7 @@
 	    </div>
       </div>
     </div>
+
      <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -331,10 +368,8 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.carousel -->
-    
-    
-    
+    </div>
+	<!-- /.carousel -->
 
     <!-- Contact Us -->
     <div class="section-wrapper" id="contact">
@@ -388,11 +423,10 @@
 		      </form>
 	        </div>
             <!-- contact details-->
-	        <div class=" col-xs-12 col-sm-12 col-md-6 col-md-offset-2">
-                <ul>
+	        <div class=" col-xs-12 col-sm-12 col-md-6 col-md-offset-2 contactPad">
 				   <div  class="row">
 				     <h3 class="contactDetails"> Contact Details!! </h3>
-				     <li class= "col-xs-6 col-sm-6 col-md-1"> <i class="glyphicon glyphicon-home"></i></li>
+				     <div class= "col-xs-6 col-sm-6 col-md-1"> <i class="glyphicon glyphicon-home"></i></div>
 				     <div class=" col-xs-6 col-sm-6 col-md-4">
 				      <p>Electro Productions Inc</p> 
 				        <p>704 Fox Street </p>
@@ -400,34 +434,16 @@
 				     </div>
 				   </div>
 				   <div class="row">
-				     <li class= "col-xs-6 col-sm-6 col-md-1"><i class="glyphicon glyphicon-phone"></i> </li>
+				     <div class= "col-xs-6 col-sm-6 col-md-1"><i class="glyphicon glyphicon-phone"></i> </div>
 				     <div class=" col-xs-6 col-sm-6 col-md-4">
 				       <p> 219-608-1833 </p>
 					 </div>
 				   </div >
-			   </ul>
 		    </div>
 			<!-- end -->
           </div>
 	    </div>  
       </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">We'll get back to you shortly</h4>
-          </div>
-          <div class="modal-body">
-            <p>Thank you for contacting us! Please check your mailbox for the confirmation email.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
       </div>
     </div>
 

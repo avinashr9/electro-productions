@@ -114,6 +114,10 @@ li{
 	body {
 		padding-top:70px;
 	}
+
+    .contactPad  {
+      padding-left: 55px;
+    }
 }
 
 /* Grid Styling */
@@ -295,7 +299,7 @@ video {
 	float:right;
 }
 .social-icon ul{
-  margin-top:2 %;
+  margin-top:2%;
   
 }
 .social-icon > li {
