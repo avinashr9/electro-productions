@@ -109,7 +109,7 @@
 	 <?php if( isset($_GET["status"] ) AND $_GET["status"]=="true"){ ?>
          <script> 
              $('#myModalLabel').text("We'll get back to you shortly");	 
-		    $('#Message').text("Thank you for contacting us! Please check your mailbox for the confirmation email.Check your spam folder also.");
+		    $('#Message').text("Thank you for contacting us! Please check your mailbox for the confirmation email. If you don't find the email in your inbox, please check your spam or junk folder.");
 		  $('#submitModal').modal('show');
 		 </script>
 	 <?php }else if( isset($_GET["status"] ) AND $_GET["status"]=="false") { ?>
@@ -312,7 +312,7 @@
 
 	          <p>Seeing the potential in Indiana and Chicago for a high quality film production company, he returned to the Midwest and began working as a Director and Director of Photography on many commercials, music videos, industrials and short films. He has also worked as an Adjunct Professor, teaching Film/Video Production and Film History. He is simultaneously working on a feature-length documentary about Ibrahim Parlak, a Turkish national under investigation by Homeland Security. The working title of the film is “Gulistan: The Ibrahim Parlak Story".</p> 
 
-              <p>His work with Electro Productions began because of his goal to bring cutting-edge, film quality production techniques and standards to regional companies, non-profits and creative projects.</p>
+              <p class="addPadding">His work with Electro Productions began because of his goal to bring cutting-edge, film quality production techniques and standards to regional companies, non-profits and creative projects.</p>
   	        </div>
 		  </div> 
 	    </div>
@@ -425,7 +425,7 @@
             <!-- contact details-->
 	        <div class=" col-xs-12 col-sm-12 col-md-6 col-md-offset-2 contactPad">
 				   <div  class="row">
-				     <h3 class="contactDetails"> Contact Details!! </h3>
+				     <h3 class="contactDetails"> Contact Details! </h3>
 				     <div class= "col-xs-6 col-sm-6 col-md-1"> <i class="glyphicon glyphicon-home"></i></div>
 				     <div class=" col-xs-6 col-sm-6 col-md-4">
 				      <p>Electro Productions Inc</p> 
