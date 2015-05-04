@@ -29,10 +29,10 @@ EOD;
 
 if(mail("raaviavinash8072@gmail.com", "Enquiry Message from {$_REQUEST['email']}", $mailMessage01, $header)){
   mail($_REQUEST['email'], "Your Application has been Sent", $mailMessage02, $header);
-  header("Location: http://ella.ils.indiana.edu/~sgudipud/index.php?status=true"); 
+  header("Location: index.php?status=true"); 
   
 }else{
-  header("Location: http://ella.ils.indiana.edu/~sgudipud/index.php?status=false"); 	
+  header("Location: index.php?status=false"); 	
 }
 
 

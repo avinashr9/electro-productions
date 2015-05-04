@@ -109,13 +109,13 @@
 	 <?php if( isset($_GET["status"] ) AND $_GET["status"]=="true"){ ?>
          <script> 
              $('#myModalLabel').text("We'll get back to you shortly");	 
-		    $('#Message').text("Thank you for contacting us! Please check your mailbox for the confirmation email");
+		    $('#Message').text("Thank you for contacting us! Please check your mailbox for the confirmation email.Check your spam folder also.");
 		  $('#submitModal').modal('show');
 		 </script>
 	 <?php }else if( isset($_GET["status"] ) AND $_GET["status"]=="false") { ?>
 	   <script>
 	    $('#myModalLabel').text("Sorry Send Failed :(");
-	    $('#Message').text("There is some problem in seding e-mail from here.Please try to reach sravya.gudipudi@gmail.com");
+	    $('#Message').text("There is some problem in seding e-mail from here.Please try to reach ryan@electroproductions.com");
 	    $('#submitModal').modal('show');
 	   
 	   </script>
