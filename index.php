@@ -47,7 +47,7 @@
     <nav id="header" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#home" class="navbar-brand">Electro Productions</a>
+          <a href="#home" class="navbar-brand"><img src="_img/logo.png" class="logo"></a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
@@ -74,12 +74,12 @@
           <video id="video1" autoplay loop muted  > 
             <source src="video/demo.mp4" type="video/mp4" />
           </video>
-          <div class="logoOnVideo hidden-xs">
+<!--          <div class="logoOnVideo hidden-xs">
             <img src="_img/main_logo.png" alt="Company Logo" class="vidLogo"/>
-          </div>
+          </div> -->
           <div class="videoFooter">
 	        <div class="demoButton">
-              <a class="fancybox-media btn btn-primary" href="https://vimeo.com/57239949"> View our Demo Reel </a>
+              <a class="fancybox-media btn btn-primary" href="https://vimeo.com/49234767"> View our Demo Reel </a>
             </div>
 	      </div>
 	    </div>
