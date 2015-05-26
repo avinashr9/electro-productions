@@ -47,7 +47,7 @@
     <nav id="header" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#home" class="navbar-brand"><img src="_img/logo.png" class="logo"></a>
+          <a href="#home" class="navbar-brand"><img src="_img/logo.png" alt="Navigation Bar Logo" class="logo"></a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
@@ -457,7 +457,7 @@
                     <li><a target="_blank" href="https://vimeo.com/electroproductions" class="vimeo"><i class="fa fa-vimeo-square"></i></a></li>
                 </ul>
                 <div class="spacing40"></div>
-            	<p>Copyright © Electro productions Inc.</p>
+            	<p class="footerData">Copyright © Electro productions Inc.&nbsp;Developed by <a class="footerLink" target="_blank" href="https://www.linkedin.com/in/raviavinash">Avinash</a>, <a class="footerLink" target="_blank" href="https://www.linkedin.com/in/sravyagudipudi">Sravya</a>, Purnima.</p>
             </div>
     </footer>
 

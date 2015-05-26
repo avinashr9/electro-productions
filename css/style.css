@@ -237,6 +237,7 @@ li{
 }
 
 .abtLogo {
+	padding-top: 70px;
 	width: 65%;
 	height: 65%;
 }
@@ -412,4 +413,16 @@ footer{
 
 .addPadding {
 	padding-bottom: 40px;
+}
+
+.footerLink {
+	color: white;
+}
+
+a:hover {
+	color: #F89100;
+}
+
+.footerData {
+	padding-top:15px;
 }
