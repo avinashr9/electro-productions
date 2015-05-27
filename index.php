@@ -201,7 +201,7 @@
                 </div>
               </div>
 
-		      <div class ="imagetile">
+<!--		      <div class ="imagetile">
                 <div class="imageinside">
                   <?php echo "<a class=\"fancybox-media\" href=\"$links[7]\">";
                     echo "<img src=\"_img/g.jpg\" alt=\"Demo Video Link: $labels[7]\"/>";
@@ -218,6 +218,7 @@
 					echo "<div class=\"titleBox\">$labels[8]</div>" ?>
                 </div>
               </div>
+              -->
 
 	        </div>
 	      </div>
