@@ -137,6 +137,11 @@ li{
     .contactPad  {
       padding-left: 55px;
     }
+
+    nav.shrink .navbar-brand .logo{
+      width: 193px;
+	  height: 60px;
+    }
 }
 
 /* Grid Styling */

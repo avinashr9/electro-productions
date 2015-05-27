@@ -3,6 +3,14 @@ $(document).ready(function(){
 		$(this).next().slideToggle("slow");
     });
 
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+        $('nav').addClass('shrink');
+      } else {
+        $('nav').removeClass('shrink');
+      }
+    });
+
 	/* video pause */
 	$("#video1").click( function(){
        $(this).get(0).paused ? $(this).get(0).play() : $(this).get(0).pause();
