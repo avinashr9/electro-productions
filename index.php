@@ -43,6 +43,21 @@
 
   <body>
 
+    <?php
+	  $links = array();
+	  $labels = array();
+	  $file = fopen('links.txt','r');
+	  if($file) {
+		 while(!feof($file)) {
+			 $line = fgets($file);
+			 $pos = strrpos($line, "--");
+			 $links[] = substr($line, 0, $pos-1);
+			 $labels[] = substr($line, $pos+3);
+		 }
+	  }
+	  fclose($file);
+	?>
+
     <!-- Fixed Navigation Bar at the top of the page-->	
     <nav id="header" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -79,7 +94,8 @@
           </div> -->
           <div class="videoFooter">
 	        <div class="demoButton">
-              <a class="fancybox-media btn btn-primary" href="https://vimeo.com/49234767"> View our Demo Reel </a>
+              <?php echo "<a class=\"fancybox-media btn btn-primary\" href=\"$links[0]\"> View our Demo Reel </a>";
+			  ?>
             </div>
 	      </div>
 	    </div>
@@ -133,73 +149,73 @@
 
               <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/122709634">
-                    <img src="_img/a.jpg" alt="Demo Video Link: Leverage Global Partners"/>
-                  </a>
-	              <div class="titleBox">Leverage Global Partners</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[1]\">";
+                    echo "<img src=\"_img/a.jpg\" alt=\"Demo Video Link: $labels[1]\"/>";
+                    echo "</a>";
+					echo "<div class=\"titleBox\">$labels[1]</div>" ?>
                 </div>
               </div>
 
 		      <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/32875604">
-                    <img src="_img/b.jpg" alt="Demo Video Link: Vitamin Gaint"/>
-                  </a>
-	              <div class="titleBox">Vitamin Gaint</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[2]\">";
+                    echo "<img src=\"_img/b.jpg\" alt=\"Demo Video Link: $labels[2]\"/>";
+                    echo "</a>"; 
+					echo "<div class=\"titleBox\">$labels[2]</div>" ?>
                 </div>
               </div>
 
 		      <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/32881586">
-                    <img src="_img/c.jpg" alt="Demo Video Link: Bull Dog"/> 
-                  </a>
-	              <div class="titleBox">Bull Dog</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[3]\">";
+                    echo "<img src=\"_img/c.jpg\" alt=\"Demo Video Link: $labels[3]\"/>";
+                    echo "</a>";
+					echo "<div class=\"titleBox\">$labels[3]</div>" ?>
                 </div>
               </div>
 
 		      <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/60720086">
-                    <img src="_img/d.jpg" alt="Demo Video Link: Vestar Hot Rolling Mill"/> 
-                  </a>
-	              <div class="titleBox">Vestar Hot Rolling Mill</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[4]\">";
+                    echo "<img src=\"_img/d.jpg\" alt=\"Demo Video Link: $labels[4]\"/>";
+                    echo "</a>";
+					echo "<div class=\"titleBox\">$labels[4]</div>" ?>
                 </div>
               </div>
 
 		      <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/58598273">
-                    <img src="_img/e.jpg" alt="Demo Video Link: Super Bowl 2012"/> 
-                  </a>
-	              <div class="titleBox">Super Bowl 2012</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[5]\">";
+                    echo "<img src=\"_img/e.jpg\" alt=\"Demo Video Link: $labels[5]\"/>";
+                    echo "</a>";
+					echo "<div class=\"titleBox\">$labels[5]</div>" ?>
                 </div>
               </div>
 
 		      <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/58578407">
-                    <img src="_img/f.jpg" alt="Demo Video Link: Apacks"/> 
-                  </a>
-	              <div class="titleBox">Apacks</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[6]\">";
+                    echo "<img src=\"_img/f.jpg\" alt=\"Demo Video Link: $labels[6]\"/>";
+                    echo "</a>";
+					echo "<div class=\"titleBox\">$labels[6]</div>" ?>
                 </div>
               </div>
 
 		      <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/57239949">
-                    <img src="_img/g.jpg" alt="Demo Video Link: SMC"/> 
-                  </a>
-	              <div class="titleBox">SMC</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[7]\">";
+                    echo "<img src=\"_img/g.jpg\" alt=\"Demo Video Link: $labels[7]\"/>";
+                    echo "</a>";
+					echo "<div class=\"titleBox\">$labels[7]</div>" ?>
                 </div>
               </div>
 
 		      <div class ="imagetile">
                 <div class="imageinside">
-                  <a class="fancybox-media" href="https://vimeo.com/42194275">
-                    <img src="_img/h.jpg" alt="Demo Video Link: Up from here"/> 
-                  </a>
-	              <div class="titleBox">Up from Here</div>
+                  <?php echo "<a class=\"fancybox-media\" href=\"$links[8]\">";
+                    echo "<img src=\"_img/h.jpg\" alt=\"Demo Video Link: $labels[8]\"/>";
+                    echo "</a>";
+					echo "<div class=\"titleBox\">$labels[8]</div>" ?>
                 </div>
               </div>
 
