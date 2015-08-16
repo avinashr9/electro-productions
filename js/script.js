@@ -11,6 +11,10 @@ $(document).ready(function(){
       }
     });
 
+	$('.navbar-collapse ul li a').click(function() {
+      $('.navbar-toggle:visible').click();
+  });
+	
 	/* video pause */
 	$("#video1").click( function(){
        $(this).get(0).paused ? $(this).get(0).play() : $(this).get(0).pause();
